@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        tools:context = ".presentation.WelcomeFragment">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="24dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="24dp" />
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/welcome_logo"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="12dp"
+            app:srcCompat="@drawable/brain_image"
+            app:layout_constraintStart_toEndOf="@id/guideline_start"
+            app:layout_constraintEnd_toStartOf="@id/guideline_end"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"/>
+
+        <TextView
+            style="@style/TextTitleStyle"
+            android:id="@+id/tv_title"
+            android:text="@string/title"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            style="@style/TextSubTitleStyle"
+            android:id="@+id/tv_game_rules_title"
+            android:text="@string/title_game_rules"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/iv_logo"/>
+
+        <TextView
+            style="@style/ContentTextStyle"
+            android:id="@+id/tv_game_rules_description"
+            android:layout_marginTop="12dp"
+            android:text="@string/game_rules_description"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintStart_toEndOf="@id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/tv_game_rules_title"/>
+
+        <TextView
+            style="@style/TextSubTitleStyle"
+            android:id="@+id/tv_example_title"
+            android:text="@string/example_title"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toEndOf="@id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/tv_game_rules_description"/>
+
+        <TextView
+            style="@style/ContentTextStyle"
+            android:id="@+id/tv_example_description"
+            android:layout_marginTop="12dp"
+            android:text="@string/example_description"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintStart_toEndOf="@id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/tv_example_title"/>
+
+        <Button
+            style="@style/ButtonStyle"
+            android:id="@+id/button_understand"
+            android:text="@string/understand"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toEndOf="@id/guideline_start"
+            app:layout_constraintEnd_toStartOf="@id/guideline_end"
+            app:layout_constraintTop_toBottomOf="@id/tv_example_description"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

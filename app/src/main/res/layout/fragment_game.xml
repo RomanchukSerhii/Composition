@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".presentation.GameFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="24dp" />
+
+    <TextView
+        android:id="@+id/tv_timer"
+        style="@style/TextTitleStyle"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="00:00" />
+
+    <TextView
+        android:id="@+id/tv_sum"
+        style="@style/QuestionTextStyle"
+        android:layout_width="144dp"
+        android:layout_height="144dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/circle_background"
+        android:fontFamily="@font/inter_semi_bold"
+        app:layout_constraintBottom_toTopOf="@id/tv_left_number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_timer"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="1" />
+
+    <TextView
+        android:id="@+id/tv_left_number"
+        style="@style/QuestionTextStyle"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_right_answers"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@id/tv_question"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sum"
+        tools:text="7" />
+
+    <TextView
+        android:id="@+id/tv_question"
+        style="@style/QuestionTextStyle"
+        android:text="@string/question_mark"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_left_number"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_left_number"
+        app:layout_constraintTop_toTopOf="@+id/tv_left_number" />
+
+    <TextView
+        android:id="@+id/tv_right_answers"
+        style="@style/ContentTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="@string/right_answers"
+        app:layout_constraintBottom_toTopOf="@id/progress_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/custom_progress_bg"
+        app:layout_constraintBottom_toTopOf="@id/tv_options_2"
+        app:layout_constraintEnd_toStartOf="@id/guideline_end"
+        app:layout_constraintStart_toEndOf="@id/guideline_start" />
+
+    <TextView
+        android:id="@+id/tv_options_1"
+        style="@style/OptionsTextStyle"
+        android:background="@drawable/options_solid"
+        android:textColor="@color/background"
+        app:layout_constraintBottom_toTopOf="@id/tv_options_4"
+        app:layout_constraintEnd_toStartOf="@id/tv_options_2"
+        app:layout_constraintStart_toEndOf="@id/guideline_start"
+        tools:text="1" />
+
+    <TextView
+        android:id="@+id/tv_options_2"
+        style="@style/OptionsTextStyle"
+        app:layout_constraintBottom_toTopOf="@id/tv_options_5"
+        app:layout_constraintEnd_toStartOf="@id/tv_options_3"
+        app:layout_constraintStart_toEndOf="@id/tv_options_1"
+        tools:text="2" />
+
+    <TextView
+        android:id="@+id/tv_options_3"
+        style="@style/OptionsTextStyle"
+        android:background="@drawable/options_solid"
+        android:textColor="@color/background"
+        app:layout_constraintBottom_toTopOf="@id/tv_options_6"
+        app:layout_constraintEnd_toStartOf="@id/guideline_end"
+        app:layout_constraintStart_toEndOf="@id/tv_options_2"
+        tools:text="3" />
+
+
+    <TextView
+        android:id="@+id/tv_options_4"
+        style="@style/OptionsTextStyle"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_options_5"
+        app:layout_constraintStart_toEndOf="@id/guideline_start"
+        tools:text="4" />
+
+    <TextView
+        android:id="@+id/tv_options_5"
+        style="@style/OptionsTextStyle"
+        android:background="@drawable/options_solid"
+        android:textColor="@color/background"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_options_6"
+        app:layout_constraintStart_toEndOf="@id/tv_options_4"
+        tools:text="5" />
+
+    <TextView
+        android:id="@+id/tv_options_6"
+        style="@style/OptionsTextStyle"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline_end"
+        app:layout_constraintStart_toEndOf="@id/tv_options_5"
+        tools:text="6" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
