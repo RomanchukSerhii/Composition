@@ -13,4 +13,53 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="TextTitleStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:fontFamily">@font/montserrat_semi_bold</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="TextSubTitleStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:fontFamily">@font/inter_semi_bold</item>
+    </style>
+    <style name="ContentTextStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+    </style>
+    <style name="ButtonStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">@color/primary_purple</item>
+    </style>
+    <style name="QuestionTextStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">48sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:fontFamily">@font/inter_semi_bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/stroke_button</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+    <style name="OptionsTextStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:fontFamily">@font/inter_semi_bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/options_stroke</item>
+        <item name="android:padding">12dp</item>
+    </style>
 </resources>
