@@ -18,6 +18,7 @@
         android:layout_marginTop="16dp"/>
 
     <Button
+        android:id="@+id/button_level_test"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:text="@string/test_level"
@@ -29,6 +30,7 @@
 
     <Button
         style="@style/ButtonStyle"
+        android:id="@+id/button_level_easy"
         android:layout_width="match_parent"
         android:text="@string/easy_level"
         android:layout_marginStart="24dp"
@@ -37,6 +39,7 @@
 
     <Button
         style="@style/ButtonStyle"
+        android:id="@+id/button_level_normal"
         android:layout_width="match_parent"
         android:text="@string/normal_level"
         android:layout_marginStart="24dp"
@@ -45,6 +48,7 @@
 
     <Button
         style="@style/ButtonStyle"
+        android:id="@+id/button_level_hard"
         android:layout_width="match_parent"
         android:text="@string/hard_level"
         android:layout_marginStart="24dp"
