@@ -77,6 +77,7 @@
         android:text="@string/right_answers"
         app:layout_constraintBottom_toTopOf="@id/progress_bar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ProgressBar
@@ -85,7 +86,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
-        android:background="@drawable/custom_progress_bg"
+        android:progressDrawable="@drawable/custom_progress_bg"
         app:layout_constraintBottom_toTopOf="@id/tv_options_2"
         app:layout_constraintEnd_toStartOf="@id/guideline_end"
         app:layout_constraintStart_toEndOf="@id/guideline_start" />
