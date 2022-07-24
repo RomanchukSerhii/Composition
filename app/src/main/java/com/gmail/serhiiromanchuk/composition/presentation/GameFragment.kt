@@ -8,13 +8,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.gmail.serhiiromanchuk.composition.R
 import com.gmail.serhiiromanchuk.composition.databinding.FragmentGameBinding
 import com.gmail.serhiiromanchuk.composition.domain.entity.GameResult
 import com.gmail.serhiiromanchuk.composition.domain.entity.Level
-import kotlinx.android.synthetic.main.fragment_game.*
 
 class GameFragment : Fragment() {
     private var _binding: FragmentGameBinding? = null
