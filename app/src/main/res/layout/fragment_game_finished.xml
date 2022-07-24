@@ -59,10 +59,10 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_score_answers" />
 
     <TextView
-        style="@style/TextSubTitleStyle"
         android:id="@+id/tv_score_percentage"
+        style="@style/TextSubTitleStyle"
         android:layout_marginTop="6dp"
-        android:text="Процент правильных ответов: %s"
+        android:text="@string/score_percentage"
         app:layout_constraintStart_toStartOf="@+id/guideline_start"
         app:layout_constraintTop_toBottomOf="@id/tv_required_percentage" />
 
