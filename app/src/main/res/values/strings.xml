@@ -20,7 +20,7 @@
     <string name="game_over">Game over</string>
     <string name="required_percentage">Необходимый процент правильных ответов: %s</string>
     <string name="score_answers">Ваш счет: %s</string>
-    <string name="try_again">Поробоваь снова</string>
+    <string name="try_again">Поробовать снова</string>
     <string name="progress_answers">Правильных ответов %s (минимум %s)</string>
     <string name="score_percentage">Процент правильных ответов: %s</string>
 </resources>

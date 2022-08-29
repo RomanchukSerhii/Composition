@@ -1,58 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".presentation.ChooseLevelFragment"
-    android:background="@color/background"
-    android:orientation="vertical">
-
-    <TextView
-        style="@style/TextSubTitleStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/choose_level"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="16dp"/>
-
-    <Button
-        android:id="@+id/button_level_test"
-        android:layout_height="wrap_content"
+<layout>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        android:text="@string/test_level"
-        android:background="@drawable/stroke_button"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginTop="16dp"
-        app:backgroundTint="@null"/>
+        android:layout_height="match_parent"
+        tools:context=".presentation.ChooseLevelFragment"
+        android:background="@color/background"
+        android:orientation="vertical">
 
-    <Button
-        style="@style/ButtonStyle"
-        android:id="@+id/button_level_easy"
-        android:layout_width="match_parent"
-        android:text="@string/easy_level"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginTop="16dp"/>
+        <TextView
+            style="@style/TextSubTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_level"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"/>
 
-    <Button
-        style="@style/ButtonStyle"
-        android:id="@+id/button_level_normal"
-        android:layout_width="match_parent"
-        android:text="@string/normal_level"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginTop="8dp"/>
+        <Button
+            android:id="@+id/button_level_test"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@string/test_level"
+            android:background="@drawable/stroke_button"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="16dp"
+            app:backgroundTint="@null"/>
 
-    <Button
-        style="@style/ButtonStyle"
-        android:id="@+id/button_level_hard"
-        android:layout_width="match_parent"
-        android:text="@string/hard_level"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginTop="8dp"/>
+        <Button
+            style="@style/ButtonStyle"
+            android:id="@+id/button_level_easy"
+            android:layout_width="match_parent"
+            android:text="@string/easy_level"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="16dp"/>
 
-</LinearLayout>
+        <Button
+            style="@style/ButtonStyle"
+            android:id="@+id/button_level_normal"
+            android:layout_width="match_parent"
+            android:text="@string/normal_level"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            style="@style/ButtonStyle"
+            android:id="@+id/button_level_hard"
+            android:layout_width="match_parent"
+            android:text="@string/hard_level"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+</layout>
